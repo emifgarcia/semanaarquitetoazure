@@ -65,4 +65,8 @@ Como último passo, configuraremos o Application Gateway para ouvir nas portas 8
 
 Nesta seção, iremos destacar os principais componentes da nova arquitetura e os motivos que nos levaram a escolher cada um deles em relação aos seus concorrentes no Azure.
 
+| Coluna 1 | Coluna 2 | Coluna 3 |
+|----------|----------|----------|
+| Valor 1  | Valor 2  | Valor 3  |
+| Valor 4  | Valor 5  | Valor 6  |
 
