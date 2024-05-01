@@ -99,28 +99,22 @@ A seguir, apresentamos uma estimativa de precificação para a migração da apl
 
 ## Validação CPSDM
 
-Fatores:
+Fatores:  
 `Custo` peso=2  
 `Performance` peso=1.5  
 `Seguro` peso=1.5  
 `Disponível` peso=1  
 `Moderno` peso=1  
 
-Pontuações:
+Pontuações:  
+`1` = Não aderente  
+`2` = Parcialmente aderente  
+`3` = Totalmente aderente  
 
-1 = Não aderente
-
-2 = Parcialmente aderente
-
-3 = Totalmente aderente
-
-Resultados:
-
-21 - 15 recurso altamente aderente às necessidades do cliente
-
-14 - 12 recurso moderadamente aderente às necessidades do cliente
-
-07 - 12 recurso não aderente às necessidades do cliente
+Resultados:  
+`21 - 15` recurso altamente aderente às necessidades do cliente  
+`14 - 12` recurso moderadamente aderente às necessidades do cliente  
+`07 - 12` recurso não aderente às necessidades do cliente  
 
 Avaliação do CPSDM para o Projeto:
 
