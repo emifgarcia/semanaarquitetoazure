@@ -120,6 +120,40 @@ Resultado da avaliação do CPSDM para o Projeto:
 
 ![image](https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/bf41d58a-e379-49fc-931e-5e889ba327e4)
 
+## Acessos
 
+Application Gateway: cltec-ti-agw-saa-prod-uksouth-001
 
+Endereço aplicação Sistema: 4.250.86.222
 
+Endereço aplicação Dashboard: 4.250.86.222:8080
+
+## Conclusão
+
+A migração bem-sucedida da aplicação "Sistema" para a plataforma Azure representa um marco significativo no caminho rumo à modernização e otimização dos recursos tecnológicos do cliente. Ao longo deste processo, foram enfrentados desafios e obstáculos, mas também foram identificadas oportunidades e benefícios tangíveis que fortalecem a posição do cliente como uma organização ágil e orientada para o futuro. Através da colaboração e do comprometimento de todas as equipes envolvidas, conseguimos planejar, projetar e implementar uma solução de migração robusta, escalável e eficiente, que alinha perfeitamente as necessidades do cliente com os recursos e serviços disponíveis na plataforma Azure. Esta migração não apenas proporciona benefícios imediatos, como a redução de custos operacionais e aprimoramento da escalabilidade e da disponibilidade, mas também prepara o terreno para futuras inovações e aprimoramentos.
+
+## Links de Referência
+
+Data Migration Assistant:
+
+ https://learn.microsoft.com/en-us/sql/dma/dma-overview?view=sql-server-ver16  
+
+Azure Migrate:
+
+https://learn.microsoft.com/pt-br/azure/migrate/migrate-services-overview  
+
+Install Remote Access as a VPN server:
+
+ https://learn.microsoft.com/en-us/windows-server/remote/remote-access/get-started-install-ras-as-vpn?tabs=servermgr  
+
+Recomendações de abreviação para recursos do Azure:
+
+https://learn.microsoft.com/pt-br/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations  
+
+Download .NET 8.0:
+
+https://dotnet.microsoft.com/pt-br/download/dotnet/8.0  
+
+Download arquivos Aplicação e Banco de Dados:
+
+https://stodiskdesafio.blob.core.windows.net/saa/Sistema.zip
