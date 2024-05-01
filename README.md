@@ -90,3 +90,12 @@ Esta seção apresenta o padrão de nomenclatura proposto para os recursos e com
 | Função | Identificador da finalidade do recurso ou alguma indicação de onde o recurso está anexado. Exemplos: `db (banco de dados)`, `ws (servidor web)`, `ps (servidor de impressão)` |
 | Instância* | A contagem de instâncias para um recurso específico, para diferenciá-lo de outros recursos que têm a mesma convenção de nomenclatura e componentes de nomenclatura. Exemplos, `01`, `001` |
 
+## Estimativa de precificação
+
+A seguir, apresentamos uma estimativa de precificação para a migração da aplicação "Sistema" do ambiente on-premise para a plataforma Azure. Essa estimativa foi desenvolvida com base em uma análise detalhada dos requisitos da aplicação, da arquitetura proposta e dos preços dos serviços da Azure. É importante observar que a estimativa de precificação apresentada abaixo é uma projeção aproximada e pode variar com base em diversos fatores, como o consumo real de recursos, configurações específicas, descontos aplicáveis, flutuações nos preços do mercado e mudanças nas estratégias de implementação ao longo do tempo. Além disso, esta estimativa foi elaborada com base em dados disponíveis no momento da sua criação e está sujeita a alterações de acordo com as políticas de preços e ofertas futuras da Azure.
+
+
+<img width="1264" alt="image" src="https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/2423bac3-761f-4370-ad76-723363b01af9">
+
+
+
