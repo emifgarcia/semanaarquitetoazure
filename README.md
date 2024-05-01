@@ -67,6 +67,13 @@ Nesta seção, iremos destacar os principais componentes da nova arquitetura e o
 
 | Coluna 1 | Coluna 2 | Coluna 3 |
 |----------|----------|----------|
-| Valor 1  | Valor 2  | Valor 3  |
-| Valor 4  | Valor 5  | Valor 6  |
+| App Service  | Hospedar e executar a aplicação "Sistema" na nuvem Azure  | Gerenciamento simplificado: gerencia automaticamente muitos aspectos da infraestrutura. Isso reduz significativamente a carga de trabalho administrativa em comparação com a gestão manual de uma máquina virtual.
+Escalabilidade automática: facilita a escalabilidade automática da aplicação com base na demanda. Isso significa que a aplicação pode lidar com picos de tráfego sem intervenção manual, garantindo alta disponibilidade e desempenho consistente.
+Foco no desenvolvimento: os desenvolvedores podem se concentrar mais no desenvolvimento de aplicativos e menos na configuração e gerenciamento da infraestrutura. Isso acelera o ciclo de desenvolvimento e permite lançar novas funcionalidades mais rapidamente.
+Integração com outros serviços do Azure: integra perfeitamente com outros serviços do Azure, como bancos de dados, armazenamento, autenticação e monitoramento.
+Fácil implantação e atualização: oferece várias opções para implantar e atualizar aplicativos, incluindo integração contínua/desenvolvimento contínuo (CI/CD) e implantação com um clique.  |
+| Virtual network gateway  | Valor 5  | Valor 6  |
+| Network Virtual Appliance | 
+| Vnet Peering |
+| Application gateway |
 
