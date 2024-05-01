@@ -81,7 +81,12 @@ Esta seção apresenta o padrão de nomenclatura proposto para os recursos e com
 
 | Componente de nomenclatura | Descrição |
 |----------------------------|------------|
-| Organização* | Nome de nível superior da organização, normalmente utilizado como o grupo de gerenciamento superior ou, em organizações menores, parte da convenção de nomenclatura. Exemplo: `cltec...` |
-
-
+| Organização* | Nome de nível superior da organização, normalmente utilizado como o grupo de gerenciamento superior ou, em organizações menores, parte da convenção de nomenclatura. Exemplo: `cltec` |
+| Unidade de negócio ou departamento* | Divisão de nível superior da sua empresa proprietária da assinatura ou da carga de trabalho à qual o recurso pertence. Em organizações menores, esse componente pode representar um único elemento organizacional corporativo de nível superior. Exemplos: `fin`, `mktg`, `product`, `it`, `corp`|
+| Tipo de recurso* | Uma abreviação que representa o tipo de recurso ou ativo do Azure. Esse componente geralmente é um prefixo ou sufixo no nome. Exemplos: `rg`, `vm`|
+| Nome do projeto, aplicativo ou serviço* | Nome de um projeto, aplicativo ou serviço do qual o recurso faz parte. Exemplos: `navigator`, `emissions`, `sharepoint`, `hadoop` |
+| Ambiente* | A fase do ciclo de vida de desenvolvimento da carga de trabalho compatível com o recurso. Exemplos: `prod`, `dev`, `qa`, `stage`, `test` |
+| Localidade* | A região ou o provedor de nuvem onde o recurso está implantado. Exemplos: `westus`, `eastus2`, `westeu`, `usva`, `ustx` |
+| Função | Identificador da finalidade do recurso ou alguma indicação de onde o recurso está anexado. Exemplos: `db (banco de dados)`, `ws (servidor web)`, `ps (servidor de impressão)` |
+| Instância* | A contagem de instâncias para um recurso específico, para diferenciá-lo de outros recursos que têm a mesma convenção de nomenclatura e componentes de nomenclatura. Exemplos, `01`, `001` |
 
