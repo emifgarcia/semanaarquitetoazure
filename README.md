@@ -94,10 +94,34 @@ Esta seção apresenta o padrão de nomenclatura proposto para os recursos e com
 
 A seguir, apresentamos uma estimativa de precificação para a migração da aplicação "Sistema" do ambiente on-premise para a plataforma Azure. Essa estimativa foi desenvolvida com base em uma análise detalhada dos requisitos da aplicação, da arquitetura proposta e dos preços dos serviços da Azure. É importante observar que a estimativa de precificação apresentada abaixo é uma projeção aproximada e pode variar com base em diversos fatores, como o consumo real de recursos, configurações específicas, descontos aplicáveis, flutuações nos preços do mercado e mudanças nas estratégias de implementação ao longo do tempo. Além disso, esta estimativa foi elaborada com base em dados disponíveis no momento da sua criação e está sujeita a alterações de acordo com as políticas de preços e ofertas futuras da Azure.
 
-<img src="https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/2423bac3-761f-4370-ad76-723363b01af9" style="border: 1px solid black;">
-
 
 <img width="1264" alt="image" src="https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/2423bac3-761f-4370-ad76-723363b01af9">
 
+## Validação CPSDM
+
+Fatores:
+`Custo` peso=2
+`Performance` peso=1.5
+`Seguro` peso=1.5
+`Disponível` peso=1
+`Moderno` peso=1
+
+Pontuações:
+
+1 = Não aderente
+
+2 = Parcialmente aderente
+
+3 = Totalmente aderente
+
+Resultados:
+
+21 - 15 recurso altamente aderente às necessidades do cliente
+
+14 - 12 recurso moderadamente aderente às necessidades do cliente
+
+07 - 12 recurso não aderente às necessidades do cliente
+
+Avaliação do CPSDM para o Projeto:
 
 
