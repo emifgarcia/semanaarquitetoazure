@@ -122,11 +122,11 @@ Resultado da avaliação do CPSDM para o Projeto:
 
 ## Acessos
 
-Application Gateway: cltec-ti-agw-saa-prod-uksouth-001
+Application Gateway: `cltec-ti-agw-saa-prod-uksouth-001`
 
-Endereço aplicação Sistema: 4.250.86.222
+Endereço aplicação Sistema: `4.250.86.222`
 
-Endereço aplicação Dashboard: 4.250.86.222:8080
+Endereço aplicação Dashboard: `4.250.86.222:8080`
 
 ## Conclusão
 
