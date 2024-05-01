@@ -28,3 +28,41 @@ Nesta fase, a aplicação "Sistema" será migrada do servidor local para o App S
 
 ![image](https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/dcd6bdd1-e03a-4c70-be78-0a156ccb7a7e)
 
+### Fase 2
+Nesta fase, estamos planejando migrar o banco de dados SQL Server local, atualmente instalado na VM Windows Server, para o Azure como um serviço PaaS, utilizando o SQL Server e o SQL Database. É importante destacar que durante essa migração, não será possível manter um banco de dados no Azure simultaneamente ao banco local. Isso ocorre porque escrever dados em ambos os bancos ao mesmo tempo pode causar problemas durante a fusão, potencialmente resultando na perda de dados importantes.
+
+Para minimizar o tempo de inatividade, nossa estratégia será criar um novo banco de dados no Azure e, em seguida, migrar os dados do banco local para ele. No entanto, é importante ressaltar que mesmo com essa abordagem, haverá um período de inatividade, embora seja mantido o mais curto possível.
+
+Vamos iniciar criando os recursos SQL Database e SQL Server no Azure. Neste estágio inicial, o banco ainda não está acessível publicamente, pois, por padrão, o Azure bloqueia o acesso público aos bancos e não há uma interface de rede (NIC) anexada a ele. Isso é normal, pois os recursos PaaS no Azure não possuem NICs criadas automaticamente.
+
+Para tornar o banco acessível, iremos criar um endpoint privado dentro da subnet da VM temporária para permitir a comunicação com o SQL Server. Ao criarmos um endpoint privado, uma zona DNS privada é gerada, já que o endpoint precisa ser chamado pelo nome do recurso, não pelo IP. Isso garante que o acesso ao nosso banco de dados seja resolvido para um endereço IP privado, não público.
+
+Posteriormente, iremos adicionar dois "virtual links" para as VNets na zona DNS privada apontando para as Vnets locais: um para a VNet da aplicação e outro para a VNet do firewall. Isso permitirá que essas redes consultem o serviço de DNS privado antes de enviar tráfego para o Azure SQL Server.
+
+Em seguida, realizaremos a instalação e configuração do Azure Data Migration Assistant na máquina local (SQL) para realizar uma avaliação e migração do banco para o Azure. Finalmente, atualizaremos a connection string para que as aplicações "Sistema” e "Dashboard" se conectem ao banco no Azure, em vez do banco local. Após essas etapas, poderemos desativar o banco local, pois o SQL Database estará ativo e operacional. As etapas descritas acima estão representadas na arquitetura ilustrada na imagem abaixo:
+
+![image](https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/062bf0ab-c0c4-4867-8531-0d059fab32f5)
+
+### Fase 3
+Na fase anterior, acessávamos nossas aplicações tanto através do App Service (Sistema) quanto da VM App localizada no ambiente on-premises (Dashboard). Ambas as aplicações estavam expostas à internet sem nenhum mecanismo de proteção, deixando-as vulneráveis a ataques e vazamento de dados. Para solucionar esse problema, na fase 3, implementaremos uma camada de segurança para nossas aplicações utilizando o Application Gateway, que oferece suporte a um Web Application Firewall (WAF), protegendo-as contra uma variedade de ameaças comuns à segurança na web, como ataques de injeção de SQL, cross-site scripting (XSS) e outros ataques de aplicativos da web.
+
+Assim, as requisições serão encaminhadas para o Application Gateway, que direcionará o tráfego para o backend correspondente. Configuraremos regras para redirecionar requisições na porta 80 para a porta 443 HTTPS, utilizando a URL do App Service para acessar a aplicação do Sistema, e na porta 8080 para a porta 80 HTTP, para acessar a aplicação do Dashboard na VM local.
+
+Após a implementação da fase 3, as aplicações ainda estarão acessíveis diretamente pelo App Service e pelo endereço público da VM App, conforme ilustrado nas linhas em vermelho na imagem abaixo. Entretanto, buscamos evitar essa exposição direta, e na fase 4 realizaremos ajustes de segurança para garantir que as aplicações só estejam acessíveis através do Application Gateway.
+
+![image](https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/90ff4102-4a30-42f2-8d26-63a26d6fbf3c)
+
+### Fase 4
+Nesta etapa, nosso objetivo é permitir que os usuários acessem exclusivamente as aplicações por meio do Application Gateway, em vez de acessá-las diretamente pelo App Service ou pelo endereço IP público da VM App. Isso é necessário porque, como discutido anteriormente, as aplicações não devem ser expostas publicamente sem uma camada de segurança intermediária, como o Application Gateway.
+
+Para alcançar esse objetivo, iniciaremos desabilitando o acesso público ao App Service e criando um private endpoint para ele na subnet cltec-ti-snet-saa-prod-uksouth-001. Dessa forma, todo o tráfego destinado ao App Service será redirecionado para seu endereço privado. Em seguida, desassociaremos o endereço IP público da NIC da VM App, restringindo o acesso à aplicação "Dashboard" exclusivamente via Application Gateway.
+
+Como último passo, configuraremos o Application Gateway para ouvir nas portas 80 e 8080 e redirecionar o tráfego recebido na porta 80 para o App Service, enquanto o tráfego recebido na porta 8080 será direcionado para a VM interna de App com o endereço IP 10.0.1.4.
+
+![image](https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/ec3e8185-34dd-4d6b-9261-43c52d502abc)
+
+## Componentes da Arquitetura
+
+Nesta seção, iremos destacar os principais componentes da nova arquitetura e os motivos que nos levaram a escolher cada um deles em relação aos seus concorrentes no Azure.
+
+
