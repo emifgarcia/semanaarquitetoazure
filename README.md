@@ -80,5 +80,7 @@ Esta seção apresenta o padrão de nomenclatura proposto para os recursos e com
 ![image](https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/335146ec-0155-4def-8a8b-5b23bac8bc84)
 
 | Componente de nomenclatura | Descrição |
-
+|----------------------------|------------|
+| Organização* | Nome de nível superior da organização, normalmente utilizado como o grupo de gerenciamento superior ou, em organizações menores, parte da convenção de nomenclatura. Exemplo: cltec |
+| 
 
