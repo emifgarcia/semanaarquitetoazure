@@ -77,3 +77,8 @@ Nesta seção, iremos destacar os principais componentes da nova arquitetura e o
 
 Esta seção apresenta o padrão de nomenclatura proposto para os recursos e componentes relacionados à migração da aplicação "Sistema” e do banco de dados do ambiente on-premise para a plataforma Azure. O objetivo deste padrão é estabelecer uma estrutura consistente e compreensível para identificar e categorizar os diversos elementos da arquitetura na nuvem. É essencial que todos os envolvidos na migração da aplicação compreendam e adotem este padrão de nomenclatura, a fim de facilitar a comunicação, o gerenciamento e a manutenção dos recursos na Azure. O padrão proposto adota as melhores práticas de nomenclatura, seguindo convenções amplamente aceitas, além de atender às necessidades específicas e exigências de conformidade de  do cliente. É importante ressaltar que este padrão de nomenclatura é flexível e pode ser ajustado para atender às necessidades específicas da aplicação, das equipes e das políticas organizacionais. No entanto, recomenda-se que qualquer modificação seja documentada e comunicada adequadamente a todas as partes interessadas. A seguir, apresentamos os principais elementos do padrão de nomenclatura, juntamente com exemplos ilustrativos para facilitar a compreensão e a aplicação prática deste padrão para o projeto.
 
+![image](https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/335146ec-0155-4def-8a8b-5b23bac8bc84)
+
+| Componente de nomenclatura | Descrição |
+
+
