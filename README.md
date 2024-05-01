@@ -100,11 +100,11 @@ A seguir, apresentamos uma estimativa de precificação para a migração da apl
 ## Validação CPSDM
 
 Fatores:
-`Custo` peso=2
-`Performance` peso=1.5
-`Seguro` peso=1.5
-`Disponível` peso=1
-`Moderno` peso=1
+`Custo` peso=2  
+`Performance` peso=1.5  
+`Seguro` peso=1.5  
+`Disponível` peso=1  
+`Moderno` peso=1  
 
 Pontuações:
 
