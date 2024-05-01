@@ -116,6 +116,10 @@ Resultados:
 `14 - 12` recurso moderadamente aderente às necessidades do cliente  
 `07 - 12` recurso não aderente às necessidades do cliente  
 
-Avaliação do CPSDM para o Projeto:
+Resultado da avaliação do CPSDM para o Projeto:
+
+![image](https://github.com/emifgarcia/semanaarquitetoazure/assets/80786486/bf41d58a-e379-49fc-931e-5e889ba327e4)
+
+
 
 
