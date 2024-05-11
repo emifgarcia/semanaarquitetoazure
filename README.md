@@ -159,3 +159,4 @@ Download arquivos Aplicação e Banco de Dados:
 https://stodiskdesafio.blob.core.windows.net/saa/Sistema.zip
 
 Arquivo drawio:
+https://github.com/emifgarcia/semanaarquitetoazure/blob/main/saa.png
