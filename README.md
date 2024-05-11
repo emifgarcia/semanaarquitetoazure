@@ -157,3 +157,5 @@ https://dotnet.microsoft.com/pt-br/download/dotnet/8.0
 Download arquivos Aplicação e Banco de Dados:
 
 https://stodiskdesafio.blob.core.windows.net/saa/Sistema.zip
+
+Arquivo drawio:
